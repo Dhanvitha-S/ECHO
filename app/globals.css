@@ -24,3 +24,66 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+/* ========================================================== */
+
+
+
+/* ECHO Navbar */
+
+.navbar {
+  width: 100%;
+  min-height: 76px;
+  padding: 16px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f6f0;
+  border-bottom: 1px solid #e7e1d5;
+}
+
+.navbar-logo {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #142d3b;
+  text-decoration: none;
+}
+
+.navbar-logo span {
+  color: #c49a55;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-links a {
+  color: #263b45;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #168b83;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px 5%;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .navbar-links {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
